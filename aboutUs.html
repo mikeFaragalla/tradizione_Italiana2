@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ABOUT US: Tradizione Italiane</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="tradizioneItaliana.css">
+
+</head>
+<body>
+
+	<div id="aboutUsIntro">
+		<img src="AboutUsIMG/ScrollAndPenLogo.png" width="200px">
+		<h1 class="pageTitle">OUR STORY</h1>
+		<p id="aboutUsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus. Nibh tortor id aliquet lectus proin nibh nisl. Facilisis mauris sit amet massa vitae. Ullamcorper dignissim cras tincidunt lobortis feugiat. Est ullamcorper eget nulla facilisi. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Eu mi bibendum neque egestas. Leo vel fringilla est ullamcorper. Eu nisl nunc mi ipsum faucibus vitae. Nisl vel pretium lectus quam id leo in vitae. Varius duis at consectetur lorem donec. Pharetra diam sit amet nisl suscipit. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Viverra ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum varius sit. <br> <br>
+		Fermentum posuere urna nec tincidunt. Lobortis feugiat vivamus at augue eget. Sagittis orci a scelerisque purus semper. Integer quis auctor elit sed vulputate mi. Vitae congue eu consequat ac felis donec et. Arcu dictum varius duis at consectetur lorem donec. Amet dictum sit amet justo donec enim diam vulputate. Purus sit amet luctus venenatis lectus magna. Facilisis leo vel fringilla est ullamcorper eget nulla. Viverra nam libero justo laoreet sit amet cursus.</p>
+	</div>
+
+	<div id="newsLetterButtonDiv">
+		<button id="newsLetterButton">JOIN OUR NEWS LETTER</button>	
+	</div>
+
+	<hr width="100px" size="10px" color="brown">
+
+
+	<div class="aboutUsSection" ="ourFood">
+		<div id="ourFoodIMG">
+			<img src="AboutUsIMG/colosseum.jpg" width="100%">
+		</div>
+
+		<div id="ourFoodTXT">
+			<h2 class="aboutUsSectionTitle" ">OUR FOOD </h2>
+			<p class="aboutUsSectionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus. Nibh tortor id aliquet lectus proin nibh nisl. Facilisis mauris sit amet massa vitae. Ullamcorper dignissim cras tincidunt lobortis feugiat. Est ullamcorper eget nulla facilisi. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Eu mi bibendum neque egestas. Leo vel fringilla est ullamcorper.</p>
+		</div>
+	</div>
+
+	<div class="aboutUsSection" ="ourFood">
+
+		<div id="ourFoodTXT2">
+			<h2 class="aboutUsSectionTitle" ">OUR HISTORY </h2>
+			<p class="aboutUsSectionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus. Nibh tortor id aliquet lectus proin nibh nisl. Facilisis mauris sit amet massa vitae. Ullamcorper dignissim cras tincidunt lobortis feugiat. Est ullamcorper eget nulla facilisi. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Eu mi bibendum neque egestas. Leo vel fringilla est ullamcorper.</p>
+		</div>
+
+		<div id="ourFoodIMG2">
+			<img src="AboutUsIMG/colosseum.jpg" width="100%">
+		</div>
+	</div>
+
+	
+	<div id="navbar">
+        <div id="logo">
+            <a href="tradizioneItaliana.html">
+                <h2 id="title">TRADIZIONE<br>ITALIANA</h2>
+            </a>
+        </div>
+        <div id="NavButtons">
+            <a class="learnMoreButtons" id="reserveButton" href="reservationstradizione.html">RESERVATIONS</a>
+            <a class="navPageButtons" href="contactuspage.html">CONTACT US</a>
+            <a class="navPageButtons" href="locationspage.html">LOCATIONS</a>
+            <a class="navPageButtons" href="themenu.html">MENU</a>
+            <a class="navPageButtons" href="aboutUs.html">OUR STORY</a>
+        </div>
+    </div>
+
+
+	<div class="signUpOverlay">
+		<div class="signUpInputs">
+			<button id="closeOverlayButton">X</button>	
+			<h1 id="signUpHereTitle">SIGN UP HERE</h1>
+
+			<input id="fullName" class="textInputFields" type="text" placeholder="Enter Full Name">
+			<input id="email" class="textInputFields" type="text" placeholder="Enter Email Address">
+			<br>
+			<input type="checkbox" id="iAccept">
+			<label  id="iAcceptLabel" for="iAccept">By clicking here, I state that I have read and understood the terms and conditions. </label>
+			<br>
+			<button id="finishSignUp"> SUBMIT FORM </button>
+
+		</div>
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+	
+	// When the user scrolls down 20px from the top of the document, slide down the navbar
+	// When the user scrolls to the top of the page, slide up the navbar (100px out of the top view)
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+   		document.getElementById("navbar").style.top = "0";
+  		}
+  		else {
+    	document.getElementById("navbar").style.top = "-110px";
+  		}
+	}
+
+	var newsLetterButton = document.querySelector("#newsLetterButton");
+	var popUpDisplay = document.querySelector(".signUpOverlay");
+
+	var nameInput = document.querySelector("#fullName");
+	var emailInput = document.querySelector("#email");
+
+
+	var closeOverlayButton = document.querySelector("#closeOverlayButton");
+	var iAcceptButton = document.querySelector("#iAccept");
+	var finishSignUpButton = document.querySelector("#finishSignUp");
+
+
+
+	newsLetterButton.addEventListener("click", showOverlay);
+	closeOverlayButton.addEventListener("click", hideOverlay);
+	finishSignUpButton.addEventListener("click", finishSignUp);
+
+	function showOverlay(){
+		popUpDisplay.style.display = "block";
+	}
+
+	function hideOverlay(){
+		popUpDisplay.style.display = "none";
+	}
+
+	function finishSignUp(){
+		if (iAcceptButton.checked == false){
+			alert("You must accept terms and conditions before proceeding");
+
+		} else if (nameInput.value === ""){
+			alert("Please enter your name");
+
+		} else if (emailInput.value === ""){
+			alert("please enter your email address");
+		} else{
+			alert("Thank you for registering for our news letter!")
+			popUpDisplay.style.display = "none";
+		}
+	}
+
+	
+
+</script>
+</html>
